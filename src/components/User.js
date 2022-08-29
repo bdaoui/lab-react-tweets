@@ -1,8 +1,13 @@
-// function User(props){
-    
-//     <span className="user">
-//     <span className="name"> {tweet.name}</span>
-//     <span className="handle"> {tweet.handle}</span>
-//   </span>
+function User(props){
+    const {user} = props;
+    console.log(user);
+    return(    
+    <span className="user">
+        <span className="name"> {user.name}</span>
+        <span className="handle"> {user.handle}</span>
+  </span>
 
-// }
+    )
+}
+
+export default User;

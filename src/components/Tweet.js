@@ -7,10 +7,8 @@ function Tweet({tweet}) {
       <ProfileImage image={tweet.user.image} />
       <div className="body">
         <div className="top">
-          <span className="user">
-            <span className="name"> {tweet.name}</span>
-            <span className="handle"> {tweet.handle}</span>
-          </span>
+          
+          <User user={tweet.user} />
 
           <span className="timestamp"> {tweet.timestamp}</span>
         </div>
